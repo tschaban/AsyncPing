@@ -22,11 +22,15 @@ class AsyncPingResponse{
     u32_t timeout;
     IPAddress addr;
 };
+
+#define C_IP_ADDR
+/*
 #ifdef ARDUINO_ESP8266_RELEASE_2_3_0
   #define C_IP_ADDR
 #else
   #define C_IP_ADDR const
 #endif
+*/
 class AsyncPing{
 public:
   typedef std::function< bool (const AsyncPingResponse& ) > THandlerFunction;
