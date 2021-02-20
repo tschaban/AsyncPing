@@ -1,3 +1,6 @@
+#ifndef _async_ping_h
+#define _async_ping_h
+
 #include "IPAddress.h"
 #include <functional>
 #include "core_version.h"
@@ -68,3 +71,5 @@ private:
   THandlerFunction _on_recv;
   THandlerFunction _on_sent;
 };
+
+#endif // _async_ping_h
